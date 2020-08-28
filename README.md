@@ -1,3 +1,3 @@
 # Lyrics-finder
 
-### Finds lyrics using the lyrics.ovh API.
+Finds lyrics using the lyrics.ovh API.
