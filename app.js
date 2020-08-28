@@ -10,7 +10,7 @@ var searchQuery = {
 
 // *** EVENT LISTENERS ***
 // load page
-// window.addEventListener("DOMContentLoaded", resetSearch);
+window.addEventListener("DOMContentLoaded", resetSearch);
 
 // search form
 form.addEventListener("submit", function(e) {
