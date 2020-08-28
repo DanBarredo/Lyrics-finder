@@ -88,3 +88,14 @@ function alertMessage(msg, status) {
         // alert.style.height = 0;
     }, 1800);
 }
+
+// Scrollbars
+$(document).ready(function() {
+    $("body").niceScroll();
+    $("article").niceScroll(
+        {
+            cursorcolor: "#1d386b",
+            autohidemode: false,
+        }
+    );
+});
