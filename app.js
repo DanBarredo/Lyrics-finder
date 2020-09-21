@@ -32,7 +32,6 @@ form.addEventListener("submit", function(e) {
         console.log("title search empty");
         alertMessage("please enter a song title", "fail");
     } else {
-        // alertMessage("found some Lyrics", "success");
         searchLyrics(searchQuery);
     }
 });
@@ -46,9 +45,6 @@ function searchLyrics(searchQuery) {
     request.open('GET', url);
     request.onreadystatechange = function() {
         if (this.readyState === 4) {
-            console.log('Status:', this.status);
-            console.log('Headers:', this.getAllResponseHeaders());
-            // console.log('Body:', this.responseText);
             if (request.status == 404) {
                 console.log("error, nothing found");
                 alertMessage("Couldn't find any lyrics! try again", "fail");
@@ -85,7 +81,6 @@ function alertMessage(msg, status) {
     setTimeout(function() {
         alert.textContent = "";
         alert.classList.remove(`alert-${status}`);
-        // alert.style.height = 0;
     }, 1800);
 }
 
